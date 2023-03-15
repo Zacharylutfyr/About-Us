@@ -58,6 +58,12 @@ html {
   color: #6b717c;
   line-height: 30px;
 }
+.header .container-fluid .container .heading .right-header {
+  display: flex;
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+}
 
 .our-mission {
   background-image: url(/img/our-mission/vector.png);
@@ -137,4 +143,29 @@ html {
   font-size: 18px;
   line-height: 30px;
   color: #6b717c;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media screen and (max-width: 576px) {
+  .header .container-fluid .container .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .container-fluid .container .heading .left-header h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #0d1c37;
+  }
+  .header .container-fluid .container .heading .left-header p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #6b717c;
+    line-height: 30px;
+  }
+  .header .container-fluid .container .heading .right-header {
+    display: flex;
+    margin: 0 auto;
+    width: 300px;
+    height: 250px;
+  }
+}

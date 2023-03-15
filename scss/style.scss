@@ -1,18 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-transform: capitalize;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   list-style: none;
   // outline: 1px solid red;
 }
 
-
 body {
-  overflow-x: hidden ;
+  overflow-x: hidden;
 }
 
 html {
@@ -81,6 +80,12 @@ html {
             line-height: 30px;
           }
         }
+        .right-header {
+          display: flex;
+          margin: 0 auto;
+          width: 400px;
+          height: 400px;
+        }
       }
     }
   }
@@ -146,7 +151,7 @@ html {
 
 // Our Team
 .our-team {
-    margin-top: 150px;
+  margin-top: 150px;
   .container-fluid {
     .container {
       h1 {
@@ -201,3 +206,35 @@ html {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .header {
+    .container-fluid {
+      .container {
+        .heading {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .left-header {
+            h1 {
+              font-weight: 700;
+              font-size: 40px;
+              color: #0d1c37;
+            }
+            p {
+              font-weight: 400;
+              font-size: 18px;
+              color: #6b717c;
+              line-height: 30px;
+            }
+          }
+          .right-header {
+            display: flex;
+            margin: 0 auto;
+            width: 300px;
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+}
